@@ -1,192 +1,231 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>raven caws by stany fernando</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="https://i.ibb.co/5BC2r9N/raven-favi.png">
-	<meta property="og:title" content="Raven Caws by Stany Fernando">
-  <meta property="og:description" content="Photographer">
-  <meta property="og:image" content="https://i.ibb.co/GPmDqYJ/social-raven.jpg">
-  <meta property="og:url" content="https://stanyfernando.github.io/ravencaws.github.io/">
-	<style>
-            body {
-              background-color: black;
-              max-width: auto;
-              margin: 0 auto;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
-              
-            }
-
-            /* Style for the menu container */
-            nav {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              padding: 20px 10px;
-              background-color: transparent;
-              width: 100%;
-              height: 40px;
-            }
-
-            /* Style for the menu items */
-            nav ul {
-              display: flex;
-              list-style: none;
-              margin: 0;
-              padding: 0;
-            }
-
-            nav li {
-              margin: 0 175px;
-              font-size: 18px;
-              font-family: 'Oswald', sans-serif;
-            }
-
-            nav a {
-              color: #fff;
-              text-decoration: none;
-              font-weight: bold;
-            }
-nav a:hover {
-    color: #808080;
-  }
-		.gallery {
-		  display: grid;
-		  grid-template-columns: repeat(3, 1fr);
-		  grid-gap: 10px;
-		  background-color: transparent;
-		}
-nav li {
-  margin: 0 90px;
-  font-size: 18px;
-  font-family: 'Oswald', sans-serif;
-  position: relative;
-}
-
-nav li::before {
-  content: "|";
-  position: absolute;
-  top: 50%;
-  left: -90px;
-  transform: translateY(-50%);
-  color: #fff;
-}
-
-nav li:first-child::before {
-  display: none;
-}
-
-		.gallery-item {
-		  overflow: hidden;
-		}
-
-		.gallery-item img {
-		  width: 350px;
-		  height: 350px;
-              object-fit: cover;
-              transition: filter 0.5s ease;
-              filter: brightness(50%);
-               
-}
-
-		.gallery img:hover {
-			filter: brightness(100%);
-		}
-/* Style for the footer container */
-                footer {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 40px;
-                    background-color: transparent;
-                    margin-top: 50px;
-                }
-
-                /* Style for the image in the footer */
-                .footer-image {
-                    width: 80px;
-                    height: 80px;
-                    background-image: url('https://i.ibb.co/q5CFNb5/White-PNG.png');
-                    background-size: cover;
-                }
-/* For mobile devices with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    filter: none
-  }
-}
-
-/* For devices with a minimum width of 768px and a maximum width of 1023px */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 767px) {
-  .gallery-item img {
-    filter: none;
-  }
-  
-  .gallery-item img:hover {
-    filter: none;
-  }
-}
-	</style>
+    <title>raven caws by stany fernando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/pw/ADCreHduq0cGqRWeVfYsO81DKFIP60iZlEahjT7w0RjyeDcsS-iJNlH36dyCWPIXCEz346FmtMHBhBPC16QAbF4BTH4mFM9qT3HCk7BeRo4qA7eoVIliLk8El7ofqn-8cCStoVps4x3Az7PANeRv8cRIkSOiqT0H8-NlUBvFeEVmuFzprwp8IB-puKQJyIqzNzfA9ZqpG6MAssl5TXPcvsMbQ7ttNKd77n0rvYZGCYZbp4HzXdtdJS72uX0cnI80NEBJgTNCAwDO-rj2Wn3TfhDNcG0J6grjpCUXmu5qI-xiOp9a3fBJg-JqmSXZM7K_ULjbypasop94DIBDj0WHJde5dNqo7INhRiyeYDF_-PyInC3ZLXTzM9XrnuOSb8ooag7b9TOpRy2dJclDIHJCckNlSMX7sE1C1x6Y6sv8TLeE0dvS2o0IwvUX6mIgJlbszzSARmZSQ6uydQ-z1ziZJzKQZv1WE3dzDoWP2Y5DTwJrZ5HO41m0U8qDsgyWhLmzYcUHj5BoTuidFpatttCJocp5Qk5TBB44vajlc2BcKN050xpWeS3fIZ8io1HcR1OEPonm3skYKFxHcCiA-rywWWpuDxqWhQ_nfMsrfqG8i4sauCC_hJG8oZym0Lxa4gi0BFqEHxSvOYR5atDvJRfapSvgPwCrqg5ZZAh_PZ-83O-S-hafZEa1xCw1QIjFlYWOQ6kVQSSk2YGgBBkA1F2xH9Ig2gIP3pE9Ii7taekF0XJs-UzKf5TML5R39aLaGDIPBK5AvP94L95J8YEdp8sK-2q8d3nbqVo54CPXft9lVi3GpYQjyMyuGsUpS4-vtBIswPJJFMTXVF9rtk9zD1c3bk6fm6MlsubRIodIcOo_Gpwj8yzszLxFqt3gG1OqnxMcndELY9DK2fYk0GklzPLdlgi3z8SLJ1oYzpwLNNA7_2wr=w32-h32-s-no?authuser=0">
+    <meta property="og:title" content="Raven Caws by Stany Fernando">
+    <meta property="og:description" content="Photographer">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/pw/ADCreHe8HxW0xknkDepMDfp6idEwI3-Ejf_wO2zNBV65QJgENjdl8aQGEIFPwzdOJ3BKKVCgu5yEs-795tJeQM8gSfnNHN0-IFEv80rQmCGOfJL1OzTXeoCH7sujl7QhJTbKgc3j7eJIFJf_xaOevo_XkUTqF_KNRhcyM3PDbUCD3IAAMkgLaId4fU17-0TXqZFkVq5Jo4EUhbirqLT_zmdDtAYQ9lZZIw4v6Ek458XYgSXMZw519X3Ad08W_p56S-KrhGoT3q8raddZF7MQWMuGKUTEXiq8q876l8jRmgS280Jc9nwsFnbEiBMkXTAg2mhO1gRWXZh2L-iLd-dnoTr_sz3Paldkw4qCOx5Y3aie0IaiwJDPeXxYUpSt2ys373GF-5rh7MKaQUBM70_zJ92dkY5zHbZ6W6OLIgiz7NJjrdMItcEsckfCf8J1_FzvwUN5lQZSiK5q6xYv7wOZO0EPdz9bB_kskCI1uGSMWgMyzqy8oye3ux42o8m65EYPyfFyNRRXDdyAalvkv2YGaqUzZ8ww3-YJI7Xe-i_4Tb887TCBucLxuVYgDl4IjJA4CgqOjkZ_nKJX9X6HKNJfNHBYf7iPAfMhXEXLhAHbLKs4MRarum9kI2PhxjMu1GiJKJn2qeqxo2YhU754A9wY8Ri1wS88LleZ4rnRTfMjt1FZE2USigz_MsbsygkoYpOvYwm13CxPbWONSIAjJpN0XVDgf5GUuRuuY8dypzd82Fid_JCnQ0UoWGDZUsDQwScFeXtkgydX4F4FaKvtrDMrWbVx6lTBPLxvHFHeDWwWnqY1Uxb8v0KM9B4ErAXTo_IoBaWpswc0G7t8ONx3WTgI3ml7Jfj1J215C0BwyPBq511UUBrYCtCMjbn_-1GxDgrSQPYS3TXvxlMaslk9SwOh7WkyUYrav9fQJG0FD6w28Hln=w1280-h640-s-no?authuser=0">
+    <meta property="og:url" content="https://stanyfernando.github.io/ravencaws.github.io/">
+    <style>
+        body {
+        				background-color: black;
+        				max-width: auto;
+        				margin: 0 auto;
+        				display: flex;
+        				flex-wrap: wrap;
+        				justify-content: center;
+        			}
+        
+        			/* Style for the menu container */
+        			nav {
+        				display: flex;
+        				justify-content: center;
+        				align-items: center;
+        				padding: 20px 10px;
+        				background-color: transparent;
+        				width: 100%;
+        				height: 40px;
+        			}
+        
+        			/* Style for the menu items */
+        			nav ul {
+        				display: flex;
+        				list-style: none;
+        				margin: 0;
+        				padding: 0;
+        			}
+        
+        			nav li {
+        				margin: 0 175px;
+        				font-size: 18px;
+        				font-family: 'Oswald', sans-serif;
+        			}
+        
+        			nav a {
+        				color: #fff;
+        				text-decoration: none;
+        				font-weight: bold;
+        			}
+        
+        			nav a:hover {
+        				color: #808080;
+        			}
+        
+        			.gallery {
+        				display: grid;
+        				grid-template-columns: repeat(3, 1fr);
+        				grid-gap: 10px;
+        				background-color: transparent;
+        			}
+        
+        			nav li {
+        				margin: 0 90px;
+        				font-size: 18px;
+        				font-family: 'Oswald', sans-serif;
+        				position: relative;
+        			}
+        
+        			nav li::before {
+        				content: "|";
+        				position: absolute;
+        				top: 50%;
+        				left: -90px;
+        				transform: translateY(-50%);
+        				color: #fff;
+        			}
+        
+        			nav li:first-child::before {
+        				display: none;
+        			}
+        
+        			.gallery-item {
+        				overflow: hidden;
+        			}
+        
+        			.gallery-item img {
+        				width: 350px;
+        				height: 350px;
+        				object-fit: cover;
+        				transition: filter 0.5s ease;
+        				filter: brightness(50%);
+        			}
+        
+        			.gallery img:hover {
+        				filter: brightness(100%);
+        			}
+        
+        			/* Style for the footer container */
+        			footer {
+        				display: flex;
+        				justify-content: center;
+        				align-items: center;
+        				width: 100%;
+        				height: 40px;
+        				background-color: transparent;
+        				margin-top: 50px;
+        			}
+        
+        			/* Style for the image in the footer */
+        			.footer-image {
+        				width: 80px;
+        				height: 80px;
+        				background-image: url('https://lh3.googleusercontent.com/pw/ADCreHdKnovpFaqZyIoxaL8cICxMfLY1WFq94mgiRQOs2ALGOrjI6I9ETNU9B9fbMfAJ24MDTl6W0NyFEvksrtebSXPAR836aKQYU82YSEYbZXVVoDKleKO3hVhfg9NvDbQzjgY6Ptrpvtm59TOu2f0S3NBpWEpSqKpGU3_UIRvKO165G8KIlZ_fWSRLyTNmKkenmjSlF7xHTqwxZkjiLiCDWujtKDHA4YU6_Q1QBKyo856obODthUwLE3VOEKCA5hme1nuIJ03Oa6QN5aauQbc3I1vSdc9TcnpiWe-wRmyYNhA3ED4SwWmW6siYJZnyH3csT1OFjvNWeXAWPnO5OydOUzGqYJE3oSHEsOHx8uQCmZQ7ewSMb0k_jd_WoEmuz5z_8UdeYJmOorM_O_zaPCRNGXEWkKsnkfkGbUDpF8D9uz5eQiiZA7MUWAn_NKY2YLexKBJuGDp1cGWllGbGYDdJxmHzClxGlrNIKMA8vYfwhUBNfDnUlhJqOFu4YguqqC_NfpxusVaI4za95y8YVPFpchJd3gTXO_YPwRhfJAVOyI-ern74ESFPQvSBq9XXDhiGLzDnKHpzDouoiRCixs9c0ATb0d5SHGlSxfnKjF6UcMdU0bONcj79zqAnNvSimHwk-3gxM0xNFMtmEiDCqikDap5YSVS0OfETueOtoOPavQqrsNCgVG6OMkVxuX4C28YKULckRSR5sVG1F_AdZGqTxzN4VcZNKx5jjAJutyxwJJJDuGTvdIu4hkI0h7jOavIvyh4wVoIZbQtAhnaNu20HarzvvzDkNaAYa2DscTvIESeAPDZNcVh9tVfhQxkAqfC96G5MVjDZSLWmAG3ZBV_wELaUm3oPZB0kdakRxk3xem8GRBQEDOvs_euWnEfWGVeehudbhtmm5Ns_p_BdBHcZ2Aiq5zHdCxNqujhCe6TA=w1080-h1080-s-no?authuser=0');
+        				background-size: cover;
+        			}
+        
+        			/* For mobile devices with a maximum width of 767px */
+        			@media only screen and (max-width: 767px) {
+        				.gallery {
+        					grid-template-columns: repeat(1, 1fr);
+        				}
+        
+        				.gallery-item img {
+        					width: 100%;
+        					height: auto;
+        					filter: none
+        				}
+        			}
+        
+        			/* For devices with a minimum width of 768px and a maximum width of 1023px */
+        			@media only screen and (min-width: 768px) and (max-width: 1023px) {
+        				.gallery {
+        					grid-template-columns: repeat(2, 1fr);
+        				}
+        			}
+        
+        			@media (max-width: 767px) {
+        				.gallery-item img {
+        					filter: none;
+        				}
+        
+        				.gallery-item img:hover {
+        					filter: none;
+        				}
+        			}
+    </style>
 </head>
+
 <body>
-<nav>
-	  <ul>
-	    <li><a href="https://www.behance.net/stanyfernando" target="_blank">COLLECTIONS</a></li>
-<li><a href="https://www.instagram.com/ravencaws/" target="_blank">INSTAGRAM</a></li>
-<li><a href="https://twitter.com/ravncws" target="_blank">TWITTER</a></li>
-<li><a href="https://stanyfernando.github.io/aboutheraven.github.io/">ABOUT</a></li>
-	  </ul>
-	</nav>
-	<div class="gallery">
-	  <div class="gallery-item"><img src="https://i.ibb.co/Wky4ztw/2445f4140447701-624201a78d484.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/6w5JtRw/xxxx.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/JHkHPsw/ttttt.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/RzCwt2k/400m.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/bmKLhzx/noooo.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/cgDdNBP/bb0aa6140448461-624204251c9c8.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/Wtvh8rV/qqqqq.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/W2YCRBH/kid.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	  <div class="gallery-item"><img src="https://i.ibb.co/zsPTKLX/72c76e140448461-624204251d094.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando"></div>
-	</div>
-<footer>
-    <div class="footer-image"></div>
-</footer>
-<script>
-  const gallery = document.querySelector(".gallery");
-  const menuItems = document.querySelectorAll("nav li");
-
-  gallery.addEventListener("mouseenter", function() {
-    document.body.style.backgroundColor = "#181818";
-  });
-
-  gallery.addEventListener("mouseleave", function() {
-    document.body.style.backgroundColor = "black";
-  });
-
-  menuItems.forEach(menuItem => {
-    menuItem.addEventListener("mouseenter", function() {
-      this.style.color = "#red";
-    });
-    menuItem.addEventListener("mouseleave", function() {
-      this.style.color = "#fff";
-    });
-  });
-</script>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.behance.net/stanyfernando" target="_blank">COLLECTIONS</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ravencaws/" target="_blank">INSTAGRAM</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/ravncws" target="_blank">TWITTER</a>
+            </li>
+            <li>
+                <a href="https://stanyfernando.github.io/aboutheraven.github.io/">ABOUT</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdOTCUX91paVCqNGtYZYuc9c8mbmK7X3Ew1UK7FUwnlrAzDQu1wHc0xa7jQw2kdaCsdiwyuRI0Vx8TtJAKUeCCIqq0pCUmrkhPFjRNRA3zFIuHHSvtFGQHsnf-2mjET_IrP0mHjo0NzutsxjdyMN7ZX19q2vJP1579D6rBFvfADORlDDAybqZMuS9a4Zb7EI7cGy3HxTa6kXyV_MVdmhR9GuY1FUhiZGRTZj-GygdbYg7m5Serwy2oPRSTyWIiJSixd8hU8q1sEW8pMlLol3iGXCei2WqzmQgS5OCJ1B5wzrq7nkXdqoztAyrZV1yDK0gemqPuhtuUROa9C-Yq5wWYWqhfr1SgqfzwFr42WCmwV1VSSZxPMU6BVdqXSE6W0Stcgt2eWlI9D4ESIxruUu6jrksrMCtqGtLoJZNWb30AlqFlFk-ctxj5wq4hINyg8y9By0FUg9j-xKjN4YUwFJ6x2C_huxNOwnu6gZNatTjs9kC86qlm6t5aCyztHDJ_jxL8yF1X9kJERkQANNyrPwckbwsOrYNfVUQyqNVgWfQeZ6-QhBwKPwPgF_4t7JhibirLuTBA09zfOHqKdyhCJrJHWakw_-p1oh4aUyVihnMisc94lJjwURh-PpYH1E4zbEkYLF94xUqVjjpUDI8_ld0imI5x7vjWMvlV0c-fqd7GH3lmaSltB8EuXxXJOxe5L98lmacxxTqV_z1tdlDAP6fdXpsPAYhNK2mz1j3FaA3dz5AjWEpKE34yC6Vf2jaYJci2TXgNyM7nxJ83hB3I38FuP_5Kkf4CybYgkxbEC1KjnSnlv-Ay0JBemdcQUxFU7FjBNwXu79FiaAlyVlCLuFDN3tt-W8v4mkre1-jsiNK-T2psodQCsPF51SY_7ZcW0fk96hVslw1rnPLj_akcDRqDtdDAIfrFz9hcDT3zx=w2800-h1855-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcMLQQaRWdVwzw50ZvIZmmy9IA4RBqTC_TGbzE3I1qo7EyIs5qkMPez1vrEYA9e2cE7RIfUBD1Ze_j4KZ4C1NrmGsUch3UwRYTzOE1vh9-LM1Q39tI2vE4p373nGb0uvr-V_fMM5L8LIOnGnLdHD2hpxC2oTkcJDSZcZPvYOnUVF6BEN_ikJroMq1vrS0C5GLRY0qgD0ITzZuYKxj8YMjtTqtv7otq8-VqV3Qhk_C6o93wENMvfMdgduq1nBAZxAxziwVdW7lLnBLk4yqdcQ3Qk48Uk7PzdrCZKl8M8aeP7r_iaaPdeXjLs0kjgNUmWvht8V3v0H8EUwYFxgo_zKWVcBNbAdhIYhCADXfWz9y_iD0tLKpeNehAwezYApsX5Epbuymt7psVfeRN-yRblmdUbrOMNegR4_e-JYO95Yk9GBEQSa2afrKXio-7bD_Vlh_VGz7n-FljmguewwsDN7ifQ2Om4I1vWEOw-MuZ1ylGuZp9CdIThzAPDmpl8dKOzUliVe_JgUFnTL7UmINGR0L6ZMlEjVeXG_G-A2fDRVuG22xF7cxP6s1I0469GqhbLxjbkrqvBxn6Vl_-L8hw19kbqA2HBkvYKK3rBI0SJEBhaAkNB0ry0gPhbdF_Sk7RFVM4LZr8jqqv337oWjXnVwugoWivipmQPE9EYo7LYI5Yy_JM2reomGBXvFOf6u1uFiTA-6WxgrqptBwtE_oiqUUoGXuWB8lJMXZpCYWhyIjMJ8jq1b-gCog627Lv9ymwY5M7Pup-vZIRg0rPNs6bONMiAJYnxAgIxNddf2pzvj10HGYkpYXt_bq4tTteO8HaCsL90_OvPCRn_0_Atu1bukBsd0Kc5xpDtqwB8cOJRYbq52Yxa3pFTLJH-SZO9u7drFmluni3qJmjb75u5zGo_P-nzRHbflTuyUic2oVrq=w2800-h1855-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfYrgzvunstAytr5YX_a3QG0VQkDQ-tjaTFDL15mwFXfd2aCwzdT4uWVzI8Tb4e4F3DZcVPAYDaG-xLuEcX6g_B2KlV7z2Htyp1S8ro1GBa62v34Y47iXbO2utMy0X4lfNKkjyi2TO7F-ncCv_mhNhQ50l70PzywJBmcBE00FwHBTAjbs7LoDTNH8aCW4PI-gvhuBUAWx_uUAcMa0K9XphUMA17AOsPUuXp9IiXBVYcPJh0J6SlsNTAvHB6rfXAg0uNFyBJvFLp73iLKBuqVLBCGM29tLpJXHD8cszcBBMv19cxuXkh84CbETdybhCzpFQBXNHSmS0uw95kfFtwcNNThU8PYZuSd4HVz2jKZI_HPcPloxIx7ROgYGJTDf7x2hPCNrsZ0L_6kuRxtCULa7OxlFzZ8MhWMyR57yMVlb33_7Cocsf8FppFBFFn_blS760fRIAUjNHR24Qabkd0KSBBsHDnNx7im0Aix67Ggso2JYkrJyPr5cNtzvQ4NUEUrd_mmdmCJlV8K_jHx4C0nWQ8F0kCjKD6lAjChMZaZx91WbX1LghEJ8HuwcP7x87UIRw5Fb9mPXlqwUtGTm9UsKtnqGN5s1I3iFfyph5BZnX9cbFyz79ft4C6ERHnjzyEg6jEf70vZpQYYgUhwTOpSC-PJaNIzh_DbZfbGIwx9XztxjA0QSGbv5veOFwgTcz7urQBhB_NUn5sNiKA0VhxdSveknBDkTpmuNix2hqywg4v6FTYuHhDX9s0YCfpL6RFcAHXcD3X_uU4Ac5UFQrdHiXwyYJMF-TqO_110yoCbYT2Ukhhd4c3YLgD78bG8aivaEpGfHT4Hg_Eiwb4jQ1Ft_9B5vh3i7wDkhZiLNyPSeAtDHNF1SbEJobgkeu6s0pvX8XvuAgY8F2_PBJAe9nVDxrPBtjVwYj7yO2Hladx=w2906-h1924-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdTENwhvHjtTeBQgy8XuqnAjhO8iz3hlSHDbrIfMrZf1owZ5oiplQhrutJropP5NR-81DpCouaEPLrDA1rh8MALdp5JsUF23gsT9aOBTleQG8EEYMtG4lv2Ov6xAN3ZeIKq-U_jC-1yabUzf__kU6alHjNxCoY8Wx1LE5JWOOrt2FzSGcXNx0kEuSDVBf1IyDy4-VMHgVc_fpSmrGlCesr8MsU5AOQ6PIDCMEYkShMPHZYEs-plGHCgfLZBUx7bI4QBOZxUWl-nV31dS_JsMlAstE-BOb_KMVNGR3C919I51Qi5LIEtqySsKqqn4BgVeiJ4mgafP8qmuAuAdXl6Q0y--Kq2oj1u36ThLBdSW4sl5H6k_wjl5-NlL8jCGoxg0HI8GN6TY0G0titbu0Aiv5URKnW7pyETzy0aP9Oth_A9-oqmzlhCrRgvctG-mqiLzo4XZojslyKQEOUOKm6uzuY2yRPywYlN7UiAIgSxQoULZnM-wZdNfe239VlibgFtiNo9jzEUwXAw3y3GiZeJdAj1YYoETO65RPu3_AyS-39qcYpDQkIXjr3mYfYhr0z9NIuuJnVelJicXV5_OJI5j_veKb0lpWurzjBX5lhJYkimS0Y0aw_u5c3YVjCmUOAkPBhXyFOGHPwOCAtU_chpGXjkogsmj5-i196p86ZrRArKMJFcnGM368elnWB38Qv5WxDBZeflu8zQTClhPedkuWFvkExjBeYcIDJFRHoWP0VKGSkEmCh_XEJINIaWSFgzPMW9VntNgYgFeWb4PdeRQP5cRBvUHeC95N3vfdszmxh9Llhippvrw91rCyAx0WDOVT6W7dJi7BO-tOeKxfUDWGjQQu10_geeqGgl6139CsjeSsl_cViCdodrruTEZWFYEX_YddZN7kX8rOY6HvxMQ78MSZ1lWdtDAGlrwYhz=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfhrmb00qsiqIVtPpFa6ub9Vu7gDfOTZ56vZqIHQ8HOM02R-Z2vh-AcjxY0-PQyOo-jx8AHcBeiTKSytKledvEfYd9dMm9jITzh3nFo3yVTTHnENfS9T7bLcgvCIdQJnM-KMacIAgtquHjSGcq8ggtDaiioJctGw_3vZ501Hyjz2cxpu68k0J1jpiH5EbQMItQYPV8wXVpi-IBAC0h4VwLIDxJXNc3bnNKyS1VKXeY8teQWBk1vTT6QaFu29l_X9QyAYDu0ZronAX1m0v-ZR18pTb-6es0uDDTvGvwgVaxp4MVWThWBX5ElR0RiohaeKTRaSM0sVfAwfqP0-WqIOGevoCYTFrmubXUZ8oewHKiMmVOrVNPyX0dmo2Ca5HYEtUbOb5FfoQI9S7bqHSpNZ3q0dWbNsl2avYmGKhewBuHbwpDw9Vo7lKUjco2T8D7BzWeqRH25D89vyPK2CJhQ-BD087ByWMYkljH0K-Jx7FUHwFi1QnU4HCrkmolgl7cPMiiSvmArvAZf8mdvZz8yWz0Q48yRIyRcCHVrPfhM51AHP3xFw3fHhBmmtqXJ5lB09d-dgoFk7fmh2BucebC8OOMn5daPU-nPbETCl3x_FDPv3C2wJ2JRSgb75La8pFcF6CjZxLkjH2WWBmoLb3spZUt9-5GlmJepFoUK1bX1eUto_pMMlJkBg8H4mbFZFdGusLqA7KeeCgxTBphTdRSmPUMcmjLBYYep2Dk1Od7kp6IbyODOQd2F3tK4fGWGtHLHHrdnWNGv_RhiZ0-M4z4F7Mia4AaqHg8_T6wkm-A8KB_61govCHjWSlvhsO1A83y6cw68dJGqXGcBtHOohbc9yld7ckjL2ozOyzwegLLnOOe3x_dGAp4uBZKS1u7hW6hJGwkbms2QYd3ntxgUDajPujV4N_UyFyMkQYyfKDtD=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHciVCU_v8__Skm-bb9hkAM1RcQ4B61iRAoVwKyXOEaZO3FhXhJO_Woky_mXgl7NL6Jf5c0qOIxAR1iTVk-yx355khDl_A6f8OKtczm41Vb-9o_4mzMZkIQa5lF_z8ak6XoMZCO2XSwYSGxYosiH47HIgQGiAF6Iz-p0nkls4cE5mYf_4J59UUuvZPIhX7niI9omMsD7z4RL4b7UGi4V5xxl33CfkzjIAV4-V03gmOL8gZYx7oqnCycpM87Bs1Yi1woZgyHDQ9fzubUuLO3styzteUHe_RlppNAr-VX6ONG_4Y0Zf2R0PngTLbpfw1v93jlnobkc66fyoY8TJXYhQjfXmyMeirARt-brDr3LbOFogBxVQT2z2U8PdbVDuid16NhW0Jb07giPKr38jBw0gaVBKoFCbDjfF__n-gL-pTP579rBqbsfj5ue5awx5otCD_LQwNEuLAMAB24spcmDizyzxmxeyH8_qRN8k3z1QayumaRV3aip6n9I_cNHSethSh1FGpIWDrIvg76AuaRINf0RbxuJq6nKeNhOCecs_xh0wOnLI8Jh1I9E6avbLIQJK7cOo5v0OvvH3K1N919TQZj82RfVTJtvTCeR7EWW204DO4UYLWO6SS03f8AvLW0BSQtWxeWclWWgbio94suapes48t1a9A_LnM4A3aaDUQQUm_0TbfBC30HwB3PLEbqfMel7gMubDRQWtKmTdoxvuAvYZKuTyQCro-DE-ro6ZxUrqDwW65x0tbdqz1RVJIVvGUCd7oEKzCpkwElYpXVjAUmh_luFaovLDectunnZzf2vUI1PxLjZBrlazECwxrKbuVQ5wkhIfikFWWWIxQUTGseihpbexwHHvhN5B0iPRfmdsPIPQH_E5vQzFX9mh7Ngs87d4YZ5jIf7hMAdTUOO7uIgG5h3YfHG5njRjdGH=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcUJJEQPvNqtoAESw0Hy0oLBVF9nrdwkZhG0_ka1z6RC6H-AHnqJDlhrGjiXztww_HHDcJz0OrUfXP6AFa7Nm_2zwlugM_G675jwPm3_6I0NBR_5jsDIKUKbjeNc33bhkdSRjg6czGu8nNAMX8vhI6z1ES6Vc5zonsZpR4ZGxXMMPsXKhZEhxRvyDinQm0Lsqjcclyygkzwzj5sckEhQEegAdVnoB1P8g7S3X0N2n5fApjnxFalLKxvV2oVWLWUHU5UwYc9qpvj-PkQtkRZeGqhFVMVk6xfQu8cSjzLPMqV013ISDoAaGeHBiihkUsaqOhOoqlxyIi0VKAaF0PIeAhkCMD3fSje8h439UyeFLvsKr-sukyjj7naf8nDJcKnc_bjh0sy4cv2wnByyMb7fVYWhmv2-8MyQthtsbmo43rlfPGMguZDyrMq-9MOVB43dHwkdx06mWIEANdM9nhLs7Da6uhvYScC8M1xkyjeoAoCt60UWlUR7BXo-k-LK85dzf0Buw3AEifHTOJfYttIW1kVoEI61pHIKksfmmrraGoY-WRBx_T05agD6ZdP6vjQH2lSJtS2w6VJZwgMf5iZE80BdofQ_WEAGGWHLoanMOzXy6KCb9g5ocsIkUshG8qKYrr916evaTTt_Zgs9kw1BS8AiPmblrGxkLkfMlRVLc5oJ-AXnNIMB_835KBsym6BsbHkqcyEK7E6j81qV0YBiK_FUH7HJ_iGqMKsE0xcvxxZT1jazOfYJsdZ1D3GVClFU_ZfSjospC6G_djApzmyUxNbbE2ulVlfuoO3dVYsTfxzcsw74f7LhgLd1te6t2AB0fxG3RMXBIJID7DHGu38cNGadTJZZdaFVZK0Hxe8lG0AH13BgsM8heoduVLIe5xmhxwvj43vzYgmxBplFdp5M3D4ftkn8oiotO7jSfon=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHf3vImpDSF2Fmk3wxYZdhHbDIzoqeJlJ9rAGiS_-twsXwLnTclrFh2Z-w8Jo6Q6F_HqOvu-T1ErSglQ7QyKrwT_LekMNwF9uy49kxEsZzbddJOmZFP0bDE1r8bLoJ5DeYIT5ymt1DaloXSDZwZ5IbTVxj0z1iQ_Ij5mXgKkgvbSML2ngf14nmBMl32N4kEJL4HzRwqDEDLUTK56x9UucKo8RinXZ6VPiK8Y2ddfr47fcNTVAoG7CsKjrNQk5Afu4rtuo39llO-O5qEpuCPQPKxeDVPdYVHTSHk1mpI964Qq6UH2s_L4T3mbPC38KNacBlOmScRN_ujohjX33QF6CgzIsVfNPtW2kzCDF3JIMXASi-T0Uh9av_am59QTcBVSuanSV9qIUmQxqKXiDi9VFoo-uB8JSYr22o-nGjRTOdps27p6VeNl-EMHCfk4THJ5TITSQBZuALOSSvlHl94lvHLP_KGxm-LfImH_56rYzrZOBg-if8ITbPOhCvjMclSzbBa4TfVQwCy5yHLacDWT_0-I2nNp8UAFMQvlx5INDSHi_pvdu6TJ7ylqStV85G6a9KUj2ztJ7EUIXnpVi6gLfypbi7wOjrQ2kEn6i1wJvoImPtMnMIvYK2kZ3dy9wYdEgHpqUAKHQIIs-ZkQO6EzLIuontcuajZc6kg1QFMywPgTY6hsJxNKUO1z48uS_8SO76HrRKz1KtgYOCJtpbEfErQzrSHzUc0ZYJ_4akB-Td_qvj9JPRLtp5_5IRF6nDHlvLs4A3m__SqM6cHInib2UX-uaP9ywloKDYrywTLbolq-NJHWiqv9wdTzl_-M1HUNP2XYLjS3DsPSh5GNftD4_zG2ZHMMbB66DL2TqhCDGNjf9tPb6jgyuLTFi-MllfdMdoFskddhoWJ8CAfpTEmLisQdIXfrAh17e1traelP=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+        <div class="gallery-item">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHfNNo1qykTc1r9k92vDCAFR9recw3EKByzu7TPKeCEfS4iPQ-MUTsYeWIrFKrhxEcCyBA7YZ5xERaAyi_Z8JwliLxg2c8eXnklBjDOsAag9Oer2ckEvFAAtc3cx1xPYVhqJJ5ALKFesHcdFv2eTBt016A-LOYqpyq9M3NC0twkBs5TQKm6QZkQdlUqwokJgqldS9-B4k68bprR1vNr3XfBX4P_cWdOnZRiCPswT5NymuBDpJWKTPpI43kfBcvfm_etJsbvy0rCxfGyaNHioMKCJCnEhhwQYBEZfkQiGBMSamAxQxRnoLluJ-EChF3-dufPc8mZ9NP_NP2JTWke9BPPearhZb7rZD_Nxp28CCLQ6zUdnPP33CLTv8eGtJW-cDP-81aWRwTfh2TI0M-mZE9ZnR5gPf2401ypTfcE50mUbrZQmycGyeRupFWXkfiaPpQdp145CR1FKDyb3I84CSX52wdgoz6wLwnAt4fulVjwH73uV7aIRIgISe4FgolxQcix76NJEb-mIoZTg2cGmDDqJWvhBEdM0J_J-X4HVk8c-jP6ZXIwGehjKGgjLsFk3iu2ut9-NRxLnZivO3mYKKJeG1dFL9J74v8qntv7AZX8B48IeytAQSyFClim0zs4VsZJwB6budLy2s4XJQ8EYuTDTWqilp5TlcWLMKGoe1AEbPWduJ0Ra33qszjtoM5qx4zPFW8ORuEjP_ODE8496sz1YRtxwpG2c62-64k4AWCUKCSPgUUUQebjHq3z0KCWcPmOHV_6kebkPD1gT4s3k7MzVxR_03NG-ByPTh4iMlmfWIGnFo4NJSI8QqCyduHhDH6UttkdUwjzd7s6V8hkijPvtg0hnnvV2AfrQGFeyx7IKFfvcJL_LlhFKwqsPnRZzCUNalaKHMucgiKTJOnbH0FZQ3XHAAR0XGZJgjD4N=w400-h400-s-no?authuser=0"
+            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-image"></div>
+    </footer>
+    <script>
+        const gallery = document.querySelector(".gallery");
+        			const menuItems = document.querySelectorAll("nav li");
+        			gallery.addEventListener("mouseenter", function() {
+        				document.body.style.backgroundColor = "#181818";
+        			});
+        			gallery.addEventListener("mouseleave", function() {
+        				document.body.style.backgroundColor = "black";
+        			});
+        			menuItems.forEach(menuItem => {
+        				menuItem.addEventListener("mouseenter", function() {
+        					this.style.color = "#red";
+        				});
+        				menuItem.addEventListener("mouseleave", function() {
+        					this.style.color = "#fff";
+        				});
+        			});
+    </script>
 </body>
+
 </html>
