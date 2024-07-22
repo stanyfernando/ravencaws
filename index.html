@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>raven caws by stany fernando</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,220 +11,206 @@
     <meta property="og:image" content="https://i.ibb.co/fVRwhN6/social-raven.jpg">
     <meta property="og:url" content="https://ravencaws.co/">
     <style>
-        body {
-        				background-color: black;
-        				max-width: auto;
-        				margin: 0 auto;
-        				display: flex;
-        				flex-wrap: wrap;
-        				justify-content: center;
-        			}
-        
-        			/* Style for the menu container */
-        			nav {
-        				display: flex;
-        				justify-content: center;
-        				align-items: center;
-        				padding: 20px 10px;
-        				background-color: transparent;
-        				width: 100%;
-        				height: 40px;
-        			}
-        
-        			/* Style for the menu items */
-        			nav ul {
-        				display: flex;
-        				list-style: none;
-        				margin: 0;
-        				padding: 0;
-        			}
-        
-        			nav li {
-        				margin: 0 175px;
-        				font-size: 18px;
-        				font-family: 'Oswald', sans-serif;
-        			}
-        
-        			nav a {
-        				color: #fff;
-        				text-decoration: none;
-        				font-weight: bold;
-        			}
-        
-        			nav a:hover {
-        				color: #808080;
-        			}
-        
-        			.gallery {
-        				display: grid;
-        				grid-template-columns: repeat(3, 1fr);
-        				grid-gap: 10px;
-        				background-color: transparent;
-        			}
-        
-        			nav li {
-        				margin: 0 90px;
-        				font-size: 18px;
-        				font-family: 'Oswald', sans-serif;
-        				position: relative;
-        			}
-        
-        			nav li::before {
-        				content: "|";
-        				position: absolute;
-        				top: 50%;
-        				left: -90px;
-        				transform: translateY(-50%);
-        				color: #fff;
-        			}
-        
-        			nav li:first-child::before {
-        				display: none;
-        			}
-        
-        			.gallery-item {
-        				overflow: hidden;
-        			}
-        
-        			.gallery-item img {
-        				width: 350px;
-        				height: 350px;
-        				object-fit: cover;
-        				transition: filter 0.5s ease;
-        				filter: brightness(50%);
-        			}
-        
-        			.gallery img:hover {
-        				filter: brightness(100%);
-        			}
-        
-        			/* Style for the footer container */
-        			footer {
-        				display: flex;
-        				justify-content: center;
-        				align-items: center;
-        				width: 100%;
-        				height: 40px;
-        				background-color: transparent;
-        				margin-top: 50px;
-        			}
-        
-        			/* Style for the image in the footer */
-        			.footer-image {
-        				width: 80px;
-        				height: 80px;
-        				background-image: url('https://i.ibb.co/87S6Gff/White-PNG.png');
-        				background-size: cover;
-        			}
-        
-        			/* For mobile devices with a maximum width of 767px */
-        			@media only screen and (max-width: 767px) {
-        				.gallery {
-        					grid-template-columns: repeat(1, 1fr);
-        				}
-        
-        				.gallery-item img {
-        					width: 100%;
-        					height: auto;
-        					filter: none
-        				}
-        			}
-        
-        			/* For devices with a minimum width of 768px and a maximum width of 1023px */
-        			@media only screen and (min-width: 768px) and (max-width: 1023px) {
-        				.gallery {
-        					grid-template-columns: repeat(2, 1fr);
-        				}
-        			}
-        
-        			@media (max-width: 767px) {
-        				.gallery-item img {
-        					filter: none;
-        				}
-        
-        				.gallery-item img:hover {
-        					filter: none;
-        				}
-        			}
-    </style>
-</head>
+      body {
+        background-color: black;
+        max-width: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-<body>
+      /* Style for the menu container */
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: transparent;
+        width: 100%;
+        height: 40px;
+      }
+
+      /* Style for the menu items */
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        margin: 0 175px;
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #808080;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        background-color: transparent;
+      }
+
+      nav li {
+        margin: 0 90px;
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+      }
+
+      nav li::before {
+        content: "|";
+        position: absolute;
+        top: 50%;
+        left: -90px;
+        transform: translateY(-50%);
+        color: #fff;
+      }
+
+      nav li:first-child::before {
+        display: none;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+      }
+
+      .gallery-item img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        transition: filter 0.5s ease;
+        filter: brightness(50%);
+      }
+
+      .gallery img:hover {
+        filter: brightness(100%);
+      }
+
+      /* Style for the footer container */
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: transparent;
+        margin-top: 50px;
+      }
+
+      /* Style for the image in the footer */
+      .footer-image {
+        width: 80px;
+        height: 80px;
+        background-image: url('https://i.ibb.co/87S6Gff/White-PNG.png');
+        background-size: cover;
+      }
+
+      /* For mobile devices with a maximum width of 767px */
+      @media only screen and (max-width: 767px) {
+        .gallery {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .gallery-item img {
+          width: 100%;
+          height: auto;
+          filter: none
+        }
+      }
+
+      /* For devices with a minimum width of 768px and a maximum width of 1023px */
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .gallery-item img {
+          filter: none;
+        }
+
+        .gallery-item img:hover {
+          filter: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li>
-                <a href="https://www.behance.net/stanyfernando" target="_blank">COLLECTIONS</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ravencaws/" target="_blank">INSTAGRAM</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/ravncws" target="_blank">TWITTER</a>
-            </li>
-            <li>
-                <a href="https://stanyfernando.github.io/aboutheraven.github.io/">ABOUT</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="https://www.behance.net/stanyfernando" target="_blank">BEHANCE</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ravencaws/" target="_blank">INSTAGRAM</a>
+        </li>
+        <li>
+          <a href="https://stanyfernando.github.io/aboutheraven.github.io/">ABOUT</a>
+        </li>
+      </ul>
     </nav>
     <div class="gallery">
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/376zv8p/72c76e140448461-624204251d094.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/k3mDFhp/kid.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/mtrSTRS/qqqqq.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/fdyb6Kt/bb0aa6140448461-624204251c9c8.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/JtsYPzV/noooo.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/TmZfzTN/400m.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/3ccDkkX/ttttt.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/y88M5xZ/xxxx.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.ibb.co/t4qG1Q3/2445f4140447701-624201a78d484.jpg"
-            alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
-        </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/376zv8p/72c76e140448461-624204251d094.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/k3mDFhp/kid.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/mtrSTRS/qqqqq.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/fdyb6Kt/bb0aa6140448461-624204251c9c8.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/JtsYPzV/noooo.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/TmZfzTN/400m.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/3ccDkkX/ttttt.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/y88M5xZ/xxxx.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.ibb.co/t4qG1Q3/2445f4140447701-624201a78d484.jpg" alt="Ⓒ All Rights Reserved, Raven Caws by Stany Fernando">
+      </div>
     </div>
     <footer>
-        <div class="footer-image"></div>
+      <div class="footer-image"></div>
     </footer>
     <script>
-        const gallery = document.querySelector(".gallery");
-        			const menuItems = document.querySelectorAll("nav li");
-        			gallery.addEventListener("mouseenter", function() {
-        				document.body.style.backgroundColor = "#181818";
-        			});
-        			gallery.addEventListener("mouseleave", function() {
-        				document.body.style.backgroundColor = "black";
-        			});
-        			menuItems.forEach(menuItem => {
-        				menuItem.addEventListener("mouseenter", function() {
-        					this.style.color = "#red";
-        				});
-        				menuItem.addEventListener("mouseleave", function() {
-        					this.style.color = "#fff";
-        				});
-        			});
+      const gallery = document.querySelector(".gallery");
+      const menuItems = document.querySelectorAll("nav li");
+      gallery.addEventListener("mouseenter", function() {
+        document.body.style.backgroundColor = "#181818";
+      });
+      gallery.addEventListener("mouseleave", function() {
+        document.body.style.backgroundColor = "black";
+      });
+      menuItems.forEach(menuItem => {
+        menuItem.addEventListener("mouseenter", function() {
+          this.style.color = "#red";
+        });
+        menuItem.addEventListener("mouseleave", function() {
+          this.style.color = "#fff";
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>
